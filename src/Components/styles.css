@@ -1,3 +1,4 @@
+/*Responsible for page scroll*/
 html, body{
     overflow-y: scroll;
     
