@@ -1,75 +1,53 @@
-/*Responsible for page scroll*/
-html, body{
-    overflow-y: scroll;
-    
+h1{
+    text-align: center;
 }
 
-/*Container that holds movie frames*/
+/* Body & Movie Components*/
 #bodyContainer{
     border: solid blanchedalmond 2px;
     border-radius: 15px;
-    width: 100%-200;
+    margin: auto;
     height: 100%;
-
     color: white;
     /*Position to left of side bar & under nav bar*/ 
-    position: fixed;
-    left: 230px;
-    top: 100px;
-    padding-left: 10px;  
-
-    margin-left: 50px;
-
+    position: fixed; 
+    left: 0;
+    top: 8%;
 }
 
-/*Position Movie frames*/
 .positionFrames{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
-/*Styling for individual movie frames*/ 
 .styleMovieFrame{
     border: solid black 2px;
     border-radius: 50px;
-
     width: 190px;
-    height: 400px;
-
-    
+    height: 400px;    
     text-align: center;
     text-decoration: solid;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-
-    
-    
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-left: 6px;
-
-   
+    margin-right: 2px;
+    margin-left: 0.6px;  
+    margin-bottom: 5px;  
 }
 
+/*Top Navigation Bar*/
 #navBarContainer{
     border-bottom: solid black 2px;
     width: 100%;
     height: 80px;
-    
-
     text-align: left;
-
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 10px;
-    
     display: flex;
     position:fixed;
-    left: -30px;
+    left: 0px;
 }
-
-/*Style & Position nav bar titles*/ 
+ 
 ul{
     list-style-type: none;
 }
@@ -80,53 +58,19 @@ li{
 
 .styleNavBarTitles{
     font-size: 40px;
-    padding-right: 15px;
-    
-}
-
-#sideBarContainer{
-    border-right: solid black 2px;
-    
-    width: 220px;
-    height: 100%;    
-    position: fixed;
-    top: 100px;
     padding-right: 20px;
-    padding-left: 5px;
-
-    text-align: center;
-
-}
-
-#sideFilterContainer{
-    border-bottom: solid black 2px;
     
-
-    width: 240px;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-
-#positionSearchBarContainer{
-    border: solid black 2px;
-    width: 730px;
-    float: none;
-    margin-left: 50px;
 }
 
 .navSearchBar{
     border: solid black 2px;
     border-radius: 40px;
     background-color: white; 
-
-    width: 950px;
+    width: 800px;
     height: 60px;
     font: 20px;
-    margin-top: 5px;
+    position: inherit;
     margin-left: 100px;
-
     padding-left: 20px;
     padding-top: -10px;
     padding-bottom: 5px;
@@ -139,17 +83,51 @@ li{
     border-radius: 20px;
     width: 100px;
     height: 45px;
-
     position: relative;
     right: 125px;
     top: -2px;
+}
 
+.loginSignupFilterContainer{
+    border: solid blanchedalmond 2px;
+    width: 190px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    
+}
+
+.loginSignupButtons{
+    width: 85px;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    
+}
+
+/*Side Bar */
+
+#sideBarContainer{
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-top: solid black 2px;
+    width: 220px;
+    height: 29.5%;    
+    position: fixed;
+    left: 0;
+    top: 300px;
+    padding-right: 20px;
+    padding-left: 5px;
+    text-align: center;
+    background-color:azure;
 
 }
 
-
-
-
-
-
-
+#sideFilterContainer{
+    border-bottom: solid black 2px;
+    width: 240px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
