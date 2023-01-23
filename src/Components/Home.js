@@ -1,8 +1,60 @@
-import React from "react";
-import './styles.css'; 
-import Frame from "./Frame";
 
-//Movie urls - call as props below
+import React from 'react'; 
+import './styles.css'; 
+
+function Searchbar(){
+    return (
+        <div>
+            <input
+                type={'text'}
+                placeholder='Type in movie...'
+                className="navSearchBar"
+            />
+            <input 
+                type={'button'}
+                value='Search'
+                className="navSearchBarButton"
+            />
+
+        </div>
+    ); 
+}
+
+function LoginSignupButtons(){
+    return (
+        <div className="loginSignupFilterContainer">
+            <button
+                className="loginSignupButtons"><a href='/login'>Login
+            </a></button>
+            <button
+                className="loginSignupButtons"><a href='/signup'>Sign Up
+            </a></button>        
+        </div>
+    ); 
+}
+
+function NavBar(){
+    return (
+        <div id="navBarContainer">
+            <div> 
+                <ul>
+                    <li className="styleNavBarTitles">React Web Project </li>
+                    <li className="styleNavBarTitles"><a href='/tvshows'>TV Shows</a> </li>
+                    <li className="styleNavBarTitles"><a href='/movies'>Movies</a></li>
+                </ul>   
+            </div>
+            
+            <div>
+                <Searchbar />
+                <LoginSignupButtons />
+            </div>
+            
+            
+        </div>
+    ); 
+}
+
+//Movie image urls - call as props below
 const spiderman = 'https://upload.wikimedia.org/wikipedia/en/thumb/0/02/The_Amazing_Spider-Man_theatrical_poster.jpeg/220px-The_Amazing_Spider-Man_theatrical_poster.jpeg';
 const starWars ='https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/The_Empire_Strikes_Back_%281980_film%29.jpg/220px-The_Empire_Strikes_Back_%281980_film%29.jpg'
 const batman = 'https://upload.wikimedia.org/wikipedia/en/f/ff/The_Batman_%28film%29_poster.jpg'; 
@@ -25,11 +77,29 @@ const breakingBad = 'https://i.discogs.com/Xqn1j8ah16jTL61uv7YPhPQJakK7vJt5mJg2F
 const moneyHeist = 'https://static.displate.com/280x392/displate/2022-03-01/3596dc1bc676cb93c0dad5d14ece28c4_ed7f7e9626f1d6523e0faf57a9b0a3e0.jpg'; 
 const onePiece = 'https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg'; 
 const attackOnTitan = 'https://cdn.myanimelist.net/images/anime/10/47347.jpg'; 
+const transformers = 'https://upload.wikimedia.org/wikipedia/en/6/66/Transformers07.jpg'; 
+const tron = 'https://i.ytimg.com/vi/TiUmrX7CxGA/movieposter.jpg'; 
+const yourName = 'https://cdn.myanimelist.net/r/360x360/images/anime/5/87048.jpg?s=3416e76f713a9e2afc2a1009210794c1'; 
+const scaryMovie = 'https://m.media-amazon.com/images/I/5123WET5P4L._AC_SY580_.jpg'; 
 
+//Component for each individual movie frame
+function Frame(props){
+    return (
+        <div 
+            className="styleMovieFrame" 
+            style={{
+                backgroundImage: `url(${props.backgroundImage})`
+              }}
+        >
+            <p>{props.name}</p>
+            <p>{props.filmType}</p>
 
+        </div>
+        
+    ); 
+}
 
-
-
+//Component to Display Movie Frames
 function Body(){
     return (
         <div id="bodyContainer">
@@ -57,27 +127,23 @@ function Body(){
                 <Frame name='Money Heist' filmType='TV Show' backgroundImage={moneyHeist}/>
                 <Frame name='One Piece' filmType='Anime' backgroundImage={onePiece}/>
                 <Frame name='Attack On Titan' filmType='Anime' backgroundImage={attackOnTitan}/>
-                
+                <Frame name='Transformers' filmType='Action' backgroundImage={transformers}/>
+                <Frame name='Tron Legacy' filmType='Action' backgroundImage={tron}/>
+                <Frame name='Your Name' filmType='Anime' backgroundImage={yourName}/>
+                <Frame name='Scary Movie' filmType='Comedy' backgroundImage={scaryMovie}/>
                    
             </div>
 
-            
-           
-         
-             
-            
-              
-             
-            
-
-            
-            
-            
-
-           
             
         </div>
     ); 
 }
 
-export default Body;  
+export default function Home(){
+    return(
+        <>
+            <NavBar />
+            <Body />
+        </>
+    ); 
+}
