@@ -1,35 +1,35 @@
-
 import React from 'react'; 
 import './styles.css'; 
 
 function Searchbar(){
     return (
-        <div>
+        <>
             <input
                 type={'text'}
                 placeholder='Type in movie...'
-                className="navSearchBar"
+                className='navSearchBar'
             />
             <input 
                 type={'button'}
                 value='Search'
-                className="navSearchBarButton"
+                className='navSearchBarButton'
             />
-
-        </div>
-    ); 
+        </>
+    );
+            
 }
 
 function LoginSignupButtons(){
     return (
-        <div className="loginSignupFilterContainer">
+        <>
             <button
-                className="loginSignupButtons"><a href='/login'>Login
+                    className="signupButton"><a href='/signup'>Sign Up
+                </a></button>
+            <button
+                className="loginButton"><a href='/login'>Login
             </a></button>
-            <button
-                className="loginSignupButtons"><a href='/signup'>Sign Up
-            </a></button>        
-        </div>
+        </>
+        
     ); 
 }
 
@@ -38,18 +38,13 @@ function NavBar(){
         <div id="navBarContainer">
             <div> 
                 <ul>
-                    <li className="styleNavBarTitles">React Web Project </li>
-                    <li className="styleNavBarTitles"><a href='/tvshows'>TV Shows</a> </li>
-                    <li className="styleNavBarTitles"><a href='/movies'>Movies</a></li>
+                    <li className="navBarTitles">React Web Project</li>
+                    <li className="navBarTitles"><a href='/tvshows'>TV Shows</a> </li>
+                    <li className="navBarTitles"><a href='/movies'>Movies</a></li>
+                    <li><Searchbar /></li>
+                    <li><LoginSignupButtons /></li>
                 </ul>   
-            </div>
-            
-            <div>
-                <Searchbar />
-                <LoginSignupButtons />
-            </div>
-            
-            
+            </div>  
         </div>
     ); 
 }
@@ -81,6 +76,16 @@ const transformers = 'https://upload.wikimedia.org/wikipedia/en/6/66/Transformer
 const tron = 'https://i.ytimg.com/vi/TiUmrX7CxGA/movieposter.jpg'; 
 const yourName = 'https://cdn.myanimelist.net/r/360x360/images/anime/5/87048.jpg?s=3416e76f713a9e2afc2a1009210794c1'; 
 const scaryMovie = 'https://m.media-amazon.com/images/I/5123WET5P4L._AC_SY580_.jpg'; 
+const codeGeass = 'https://upload.wikimedia.org/wikipedia/en/7/74/Code_Geass_R1_box_set_cover.jpg'; 
+const bleach = 'https://cdn.myanimelist.net/images/anime/3/40451.jpg'; 
+const friends = 'https://irs.www.warnerbros.com/keyart-jpeg/tv/media/browser/friends_complete_series_key_art.jpg'; 
+const martin = 'https://m.media-amazon.com/images/I/411pMQalz-L._AC_SY580_.jpg';
+const backToTheFuture = 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Back_to_the_Future_Part_II.jpg/220px-Back_to_the_Future_Part_II.jpg'; 
+const darkKnight = 'https://resizing.flixster.com/WAHXGKleT3QvhqHUlFGIRgcQAjU=/206x305/v2/https://flxt.tmsimg.com/assets/p173378_p_v8_au.jpg'; 
+const toyStory = 'https://m.media-amazon.com/images/I/51RC8ZR6KBL._AC_SY1000_.jpg'; 
+const nowYouSeeMe = 'https://lionsgate.brightspotcdn.com/9d/b3/d6710a094ab188a8ed1fea53c72d/now-you-see-me-poster-01.jpg'; 
+const ratatouille = 'https://m.media-amazon.com/images/I/51bOQKCq1ZL._AC_SY580_.jpg'; 
+const theMatrix = 'https://m.media-amazon.com/images/I/51EG732BV3L._AC_SY580_.jpg'; 
 
 //Component for each individual movie frame
 function Frame(props){
@@ -103,8 +108,6 @@ function Frame(props){
 function Body(){
     return (
         <div id="bodyContainer">
-
-            <div className="positionFrames">
                 <Frame name='Spiderman' filmType='Action' backgroundImage={spiderman} />    
                 <Frame name='Star Wars' filmType='Action' backgroundImage={starWars}/>    
                 <Frame name='Batman' filmType='Action' backgroundImage={batman}/>  
@@ -113,8 +116,8 @@ function Body(){
                 <Frame name='Superbad' filmType='Comedy' backgroundImage={superbad}/>  
                 <Frame name='The Conjuring 2' filmType='Horror' backgroundImage={theConjuring2}/> 
                 <Frame name='The Shining' filmType='Horror' backgroundImage={theShining}/> 
-                <Frame name='Interstellar' filmType='Mystery/Science Fiction' backgroundImage={interstellar}/>  
-                <Frame name='Lucy' filmType='Mystery/Science Fiction' backgroundImage={lucy}/> 
+                <Frame name='Interstellar' filmType='Mystery/Sci-fi' backgroundImage={interstellar}/>  
+                <Frame name='Lucy' filmType='Mystery/Sci-fi' backgroundImage={lucy}/> 
                 <Frame name='Despicable Me' filmType='PG' backgroundImage={despicableMe}/> 
                 <Frame name='E.T.' filmType='PG' backgroundImage={et}/>
                 <Frame name='In Time' filmType='Action' backgroundImage={inTime}/>
@@ -131,11 +134,17 @@ function Body(){
                 <Frame name='Tron Legacy' filmType='Action' backgroundImage={tron}/>
                 <Frame name='Your Name' filmType='Anime' backgroundImage={yourName}/>
                 <Frame name='Scary Movie' filmType='Comedy' backgroundImage={scaryMovie}/>
-                   
+                <Frame name='Code Geass' filmType='Anime' backgroundImage={codeGeass}/>
+                <Frame name='Bleach' filmType='Anime' backgroundImage={bleach}/>
+                <Frame name='Friends' filmType='TV Show' backgroundImage={friends}/>
+                <Frame name='Martin' filmType='TV Show' backgroundImage={martin}/>
+                <Frame name='Back to the Future' filmType='Sci-fi' backgroundImage={backToTheFuture}/>
+                <Frame name='The Dark Knight' filmType='Action' backgroundImage={darkKnight}/>
+                <Frame name='Toy Story' filmType='PG' backgroundImage={toyStory}/>
+                <Frame name='Now You See Me' filmType='Thriller' backgroundImage={nowYouSeeMe}/>
+                <Frame name='Ratatouille' filmType='PG' backgroundImage={ratatouille}/>
+                <Frame name='The Matrix' filmType='Action/Sci-fi' backgroundImage={theMatrix}/>
             </div>
-
-            
-        </div>
     ); 
 }
 
