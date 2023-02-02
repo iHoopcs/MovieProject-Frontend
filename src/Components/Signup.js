@@ -19,6 +19,12 @@ export default function Signup(){
                     <label>Age: </label>
                     <input type={'number'} name='age' placeholder='21' required></input>
                     <br></br>
+                    <label>Account Username: </label>
+                    <input type={'text'} name='username' required></input>
+                    <br></br>
+                    <label>Account Password: </label>
+                    <input type={'text'} name='password' required></input>
+                    <br></br>
                     <input type={'submit'}></input>
                 </form>
             </div>
