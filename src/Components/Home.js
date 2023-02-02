@@ -1,23 +1,7 @@
 import React from 'react'; 
 import './styles.css'; 
 
-function Searchbar(){
-    return (
-        <>
-            <input
-                type={'text'}
-                placeholder='Type in movie...'
-                className='navSearchBar'
-            />
-            <input 
-                type={'button'}
-                value='Search'
-                className='navSearchBarButton'
-            />
-        </>
-    );
-            
-}
+
 
 function LoginSignupButtons(){
     return (
@@ -38,9 +22,7 @@ function NavBar(){
         <div id="navBarContainer">
             <div> 
                 <ul>
-                    <li className="navBarTitles">React Web Project</li>
-                    <li className="navBarTitles"><a href='/tvshows'>TV Shows</a></li>
-                    <li><Searchbar /></li>
+                    <li className="navBarTitles">ReactMovies.com</li>
                     <li><LoginSignupButtons /></li>
                 </ul>   
             </div>  
@@ -88,9 +70,6 @@ const et = 'https://play-lh.googleusercontent.com/r55cKa7hnGVkhO2XiSwIVa1N1O6ezh
 const loveAndBasketball = 'https://upload.wikimedia.org/wikipedia/en/0/02/LBmoviePoster.jpg'; 
 const coachCarter = 'https://movieposters2.com/images/659492-b.jpg'; 
 
-
-
-
 //Component for each individual movie frame
 function Frame(props){
     return (
@@ -103,12 +82,9 @@ function Frame(props){
                     backgroundImage: `url(${props.backgroundImage})`
                 }}
                 >
-
                 </div>
             </a>
-        </>
-        
-        
+        </> 
     ); 
 }
 
