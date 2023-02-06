@@ -2,6 +2,10 @@ h1{
     text-align: center;
 }
 
+p{
+    text-shadow: 1px 1px white;
+}
+
 /* Body & Movie Components*/
 #bodyContainer{
     border: solid blanchedalmond 2px;
