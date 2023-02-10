@@ -8,7 +8,7 @@ function Frame(props){
     return (
         <>
             {/*Points to movie specific url endpoint*/}
-            <a href= {`/${props.movieName}`}>
+            <a href= {`/movies/${props.id}/`}>
                 <div 
                 className="styleMovieFrame" 
                 style={{
