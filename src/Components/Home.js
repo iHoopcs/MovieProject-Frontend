@@ -15,7 +15,6 @@ function Frame(props){
                     backgroundImage: `url(${props.backgroundImage})`
                 }}
                 >   
-                    <p>{props.id}</p>
                     <p>{props.movieName}</p>
                 </div>
             </a>

@@ -22,7 +22,14 @@ function App(){
                 <Route path='/signup' element={<Signup />}/>
                 {
                     movies.map((movie) => {
-                        return <Route path={`/movies/${movie.id}/`} element={<MovieTemplate movieName={movie.name} movieId={movie.id} movieBackgroundImage={movie.movieUrl}/>}/>
+                        return <Route path={`/movies/${movie.id}/`} 
+                        element={
+                        <MovieTemplate 
+                            movieName={movie.name} 
+                            movieType={movie.type} 
+                            movieStarRating={movie.starRating} 
+                            movieRated={movie.rated}
+                        />}/>
                     })
                 }
                 
