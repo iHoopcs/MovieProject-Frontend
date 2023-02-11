@@ -29,6 +29,8 @@ function App(){
                             movieType={movie.type} 
                             movieStarRating={movie.starRating} 
                             movieRated={movie.rated}
+                            movieDescription={movie.movieDescription}
+                            movieVideoUrl={movie.videoUrl}
                         />}/>
                     })
                 }

@@ -37,7 +37,7 @@ function Body(){
             {
                 //Use array to map each movie index to Frame component
                 movies.map((movie) => {
-                    return <Frame id ={movie.id} movieName={movie.name} backgroundImage={movie.movieUrl} />
+                    return <Frame id ={movie.id} movieName={movie.name} backgroundImage={movie.imgUrl} />
                 })
             }
         </div>
