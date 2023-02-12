@@ -40,91 +40,24 @@ p{
     width: 100%;
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   display: inline-table;
 }
  
-ul{
-    list-style-type: none;
-}
-
-li{
-    display: inline;
-    margin-right: 50px;
-}
 
 .navBarTitles{
     font-size: 35px;    
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.navSearchBar{
+/*AddMovie Button Styling*/
+.addMovie{
     border: solid black 2px;
-    border-radius: 40px;
-    background-color: white; 
-    width: 800px;
-    height: 60px;
-    font: 20px;
-    padding-left: 15px;
-    font-size: 23px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.navSearchBarButton{
-    border: solid black 2px;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100px;
-    height: 50px;
-}
-
-
-.loginButton{
-    width: 85px;
-    height: 50px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif; 
-    background-color: darkgray;
-    float: right;
-    margin-right: 15px;
-}
-
-.signupButton{
-    width: 85px;
-    height: 50px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif; 
-    background-color: darkgray;
-    float: right;  
-}
-
-/*Signup Page Styling*/ 
-
-.signupForm{
-    border: solid black 2px;
-    margin: auto;
-    width: 500px;
-    height: 500px;
-}
-
-form{
+    height: 45px;
     text-align: center;
-    margin-top: 10px;
-}
-label{
-    font-size: 25px;
-    display: inline-block;
-    width: 100%;
 }
 
-input{
-    margin-bottom: 15px;
-}
 
-input[type=submit]{
-    margin-top: 10px;
-    width: 100px;
-    height: 30px;
-}
 
 /*MovieTemplate.js*/
 .movieTemplate{

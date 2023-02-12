@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom'; 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
-import Signup from './Components/Signup';
 import MovieTemplate from './Components/MovieTemplate';
+import AddMoviePage from './Components/AddMoviePage';
 
 function App(){
     const [movies, setMovies] = useState([]); 
@@ -19,7 +19,7 @@ function App(){
         <BrowserRouter >
             <Routes>
                 <Route path='/' element={<Home />}/>
-                <Route path='/signup' element={<Signup />}/>
+                <Route path='/addmovie' element={<AddMoviePage />}/>
                 {
                     movies.map((movie) => {
                         return <Route path={`/movies/${movie.id}/`} 

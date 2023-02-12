@@ -44,29 +44,22 @@ function Body(){
     ); 
 }
 
-function LoginSignupButtons(){
-    return (
-        <>
-            <button
-                    className="signupButton"><a href='/signup'>Sign Up
-                </a></button>
-            <button
-                className="loginButton"><a href='/login'>Login
-            </a></button>
-        </>
-        
-    ); 
-}
-
 function NavBar(){
     return (
         <div id="navBarContainer">
             <div> 
-                <ul>
-                    <li className="navBarTitles">ReactMovies.com</li>
-                    <li><LoginSignupButtons /></li>
-                </ul>   
+                <h1 className="navBarTitles">ReactMovies.com</h1>
+                <h1><AddMovieButton /></h1>
             </div>  
+            
+        </div>
+    ); 
+}
+
+function AddMovieButton(){
+    return (
+        <div>
+            <button className='addMovie'><a href='/addmovie'>Add Movie</a></button>
         </div>
     ); 
 }
