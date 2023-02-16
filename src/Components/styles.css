@@ -57,8 +57,6 @@ p{
     text-align: center;
 }
 
-
-
 /*MovieTemplate.js*/
 .movieTemplate{
     border: solid black 2px;
@@ -87,3 +85,36 @@ p{
 .centerHomeButton{
     margin: auto;
 }
+
+/*AddMoviePage.js styling*/
+.addMovieForm{
+    border: solid black 2px; 
+    width: 500px;
+    height: 700px;
+    text-align: center;
+    margin: auto;
+}
+
+label{
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input{
+    margin-bottom: 15px;
+}
+
+input[type="text"]{
+    height: 35px;
+}
+
+input[type="submit"]{
+    margin-top: 25px;
+    width: 150px;
+    height: 30px;
+}
+
+
+
