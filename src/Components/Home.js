@@ -8,14 +8,13 @@ function Frame(props){
     return (
         <>
             {/*Points to movie specific url endpoint*/}
-            <a href= {`/${props.movieName}`}>
+            <a href= {`/movies/${props.id}/`}>
                 <div 
                 className="styleMovieFrame" 
                 style={{
                     backgroundImage: `url(${props.backgroundImage})`
                 }}
                 >   
-                    <p>{props.id}</p>
                     <p>{props.movieName}</p>
                 </div>
             </a>
@@ -38,24 +37,10 @@ function Body(){
             {
                 //Use array to map each movie index to Frame component
                 movies.map((movie) => {
-                    return <Frame id ={movie.id} movieName={movie.name} backgroundImage={movie.movieUrl} />
+                    return <Frame id ={movie.id} movieName={movie.name} backgroundImage={movie.imgUrl} />
                 })
             }
         </div>
-    ); 
-}
-
-function LoginSignupButtons(){
-    return (
-        <>
-            <button
-                    className="signupButton"><a href='/signup'>Sign Up
-                </a></button>
-            <button
-                className="loginButton"><a href='/login'>Login
-            </a></button>
-        </>
-        
     ); 
 }
 
@@ -63,11 +48,18 @@ function NavBar(){
     return (
         <div id="navBarContainer">
             <div> 
-                <ul>
-                    <li className="navBarTitles">ReactMovies.com</li>
-                    <li><LoginSignupButtons /></li>
-                </ul>   
+                <h1 className="navBarTitles">ReactMovies.com</h1>
+                <h1><AddMovieButton /></h1>
             </div>  
+            
+        </div>
+    ); 
+}
+
+function AddMovieButton(){
+    return (
+        <div>
+            <button className='addMovie'><a href='/addmovie'>Add Movie</a></button>
         </div>
     ); 
 }
