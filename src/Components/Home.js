@@ -56,6 +56,7 @@ function NavBar(){
     ); 
 }
 
+//Component to render add movie button -> points to AddMoviePage.js
 function AddMovieButton(){
     return (
         <div>
@@ -64,6 +65,7 @@ function AddMovieButton(){
     ); 
 }
 
+//Default Component to render NavBar & Body components -> exported for use in index.js
 export default function Home(){
     return(
         <>
