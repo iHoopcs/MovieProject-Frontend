@@ -116,5 +116,30 @@ input[type="submit"]{
     height: 30px;
 }
 
+/*Styling Movie Categories*/
+ul{
+    list-style-type: none;
+}
 
+li{
+    display: inline;
+    margin: 7px;
+    padding: 10px;
+}
+
+.center-filter-links{
+    text-align: center;
+}
+
+.movie-link-btn{
+    background-color: rgb(71, 67, 64);
+    border: solid black 1px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+}
+
+.style-link-text{
+   color: white; 
+}
 
