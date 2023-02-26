@@ -54,16 +54,16 @@ function NavBar(){
 
             <div className='center-filter-links'>
                 <ul>
-                    <li><button className='movie-link-btn'><a href='action' className='style-link-text'>Action</a></button></li>
-                    <li><button className='movie-link-btn'><a href='anime' className='style-link-text'>Anime</a></button></li>
-                    <li><button className='movie-link-btn'><a href='comedy' className='style-link-text'>Comedy</a></button></li>
-                    <li><button className='movie-link-btn'><a href='comingofage' className='style-link-text'>Coming of Age</a></button></li>
-                    <li><button className='movie-link-btn'><a href='drama' className='style-link-text'>Drama</a></button></li>
-                    <li><button className='movie-link-btn'><a href='horror' className='style-link-text'>Horror</a></button></li> 
-                    <li><button className='movie-link-btn'><a href='mysteryscifi' className='style-link-text'>Mystery/Sci-fi</a></button></li>
-                    <li><button className='movie-link-btn'><a href='romance' className='style-link-text'>Romance</a></button></li> 
-                    <li><button className='movie-link-btn'><a href='sport' className='style-link-text'>Sport</a></button></li>  
-                    <li><button className='movie-link-btn'><a href='thriller' className='style-link-text'>Thriller</a></button></li>
+                    <li><button className='movie-link-btn'><a href='Action' className='style-link-text'>Action</a></button></li>
+                    <li><button className='movie-link-btn'><a href='Anime' className='style-link-text'>Anime</a></button></li>
+                    <li><button className='movie-link-btn'><a href='Comedy' className='style-link-text'>Comedy</a></button></li>
+                    <li><button className='movie-link-btn'><a href='Comingofage' className='style-link-text'>Coming of Age</a></button></li>
+                    <li><button className='movie-link-btn'><a href='Drama' className='style-link-text'>Drama</a></button></li>
+                    <li><button className='movie-link-btn'><a href='Horror' className='style-link-text'>Horror</a></button></li> 
+                    <li><button className='movie-link-btn'><a href='Mysteryscifi' className='style-link-text'>Mystery/Sci-fi</a></button></li>
+                    <li><button className='movie-link-btn'><a href='Romance' className='style-link-text'>Romance</a></button></li> 
+                    <li><button className='movie-link-btn'><a href='Sport' className='style-link-text'>Sport</a></button></li>  
+                    <li><button className='movie-link-btn'><a href='Thriller' className='style-link-text'>Thriller</a></button></li>
                 </ul>        
             </div>
         </div>

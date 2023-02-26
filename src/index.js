@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import MovieTemplate from './Components/MovieTemplate';
 import AddMoviePage from './Components/AddMoviePage';
+import FilteredMovies from './Components/FilteredMovies';
 
 function App(){
     const [movies, setMovies] = useState([]); 
@@ -20,6 +21,7 @@ function App(){
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='/addmovie' element={<AddMoviePage />}/>
+                
                 {
                     movies.map((movie) => {
                         return <Route path={`/movies/${movie.id}/`} 
@@ -35,9 +37,17 @@ function App(){
                     })
                 }
 
+                {
+                    movies.map((movie) => {
+                        return <Route path={`/${movie.type}/`} 
+                        element={<FilteredMovies movieType={movie.type}/>}/>
+                    })
+                }
                 
+
                 
-                
+
+
             </Routes>
         </BrowserRouter>
     ); 
