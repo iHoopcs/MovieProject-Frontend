@@ -1,6 +1,6 @@
 
 export default function FilteredMovies(props){
     return (
-        <h1>Welcome to the {props.movieType} Page</h1>
+        <h1>{props.movieType} Movies!</h1>
     ); 
 }

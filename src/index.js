@@ -8,8 +8,8 @@ import AddMoviePage from './Components/AddMoviePage';
 import FilteredMovies from './Components/FilteredMovies';
 
 function App(){
+    /*Initally fetch api movie data to create each individual movie route*/
     const [movies, setMovies] = useState([]); 
-
     axios.get('http://localhost:8080/api/movies')
     .then(res => {
         console.log(res.data); 
@@ -22,7 +22,7 @@ function App(){
                 <Route path='/' element={<Home />}/>
                 <Route path='/addmovie' element={<AddMoviePage />}/>
                 
-                {
+                { /*For each movie, create specific route, display individual movie & attributes*/
                     movies.map((movie) => {
                         return <Route path={`/movies/${movie.id}/`} 
                         element={
@@ -37,7 +37,7 @@ function App(){
                     })
                 }
 
-                {
+                { /*Create movie filter specific routes -> organize different movie genres*/
                     movies.map((movie) => {
                         return <Route path={`/${movie.type}/`} 
                         element={<FilteredMovies movieType={movie.type}/>}/>
