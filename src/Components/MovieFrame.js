@@ -5,16 +5,21 @@ export default function MovieFrame(props){
     const { movie } = props; 
     return (
         <>
-            <div className='col-3'>
-                {/*Points to movie specific url endpoint*/}
-                <a href= {`/movies/${movie.id}/${movie.name}`}>
-                    <div className="card mb-5">   
+            <div className='col-3'>                
+                    <div className="card shadow-lg border-light mb-5">   
+                    <a href= {`/movies/${movie.id}/${movie.name}`}>
                         <img src={movie.imgUrl} alt={movie.name} className='card-img-top'/>
+                        </a>  
                         <div className='card-body'>
-                            <h6 className='card-title'></h6>
+                            <p className='card-title'>{movie.name}</p>
+                            <div className='d-flex justify-content-between'>
+                                <p className='text-muted'>{movie.year}</p>
+                                <p className='text-muted'>{movie.hr}h {movie.min}m</p>
+                            </div>
+                            
                         </div>
                     </div>
-                </a>
+                
             </div>
         </> 
     ); 

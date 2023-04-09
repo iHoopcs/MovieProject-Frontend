@@ -21,7 +21,6 @@ export default function NavbarComponent() {
                         </form>
                         <Nav.Link href="/addMovie">Add Movie</Nav.Link>
                     </Nav>
-
                 </Container>
             </Navbar>
         </>

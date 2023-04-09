@@ -1,4 +1,3 @@
-import MovieFrame from './MovieFrame';
 import NavbarComponent from './NavbarComponent';
 import './styles.css'; 
 import DisplayMovies from './DisplayMovies';
