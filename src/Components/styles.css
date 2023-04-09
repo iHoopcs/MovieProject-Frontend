@@ -1,78 +1,7 @@
-h1{
-    text-align: center;
-}
-
-h2 {
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-p{
-    text-shadow: 1px 1px white;
-}
-
-/* Body & Movie Components*/
-#bodyContainer{
-    border: solid blanchedalmond 2px;
-    border-radius: 15px;    
-    color: white;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-}
-
-.styleMovieFrame{
-    border: solid black 2px;
-    width: 225px;
-    height: 350px;    
-    text-align: center;
-    text-decoration: solid;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    display: inline-table;
-    margin-top: 15px;
-    margin-right: 10px;
-}
-
-/*Top Navigation Bar*/
-#navBarContainer{
-    border-bottom: solid black 2px;
-    width: 100%;
-    font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
- 
-
-.navBarTitles{
-    font-size: 35px;    
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/*AddMovie Button Styling*/
-.addMovie{
-    border: solid black 2px;
-    border-radius: 5px;
-    width: 100px;
-    height: 45px;
-    text-align: center;
-}
-
-/*MovieTemplate.js*/
-.movieTemplate{
-    border: solid black 2px;
-    width: 1000px;
-    height: 600px;
-    margin: auto;
-    margin-bottom: 25px;
-}
-
-.movieInfo{
-    border: solid black 2px;
-    width: 600px;
-    margin: auto;
-    padding: 15px;
-    text-align: center;
-    
+.card{
+    width: 15rem;
+    height: auto; 
+    max-height: 500px;
 }
 
 .styleHomeButton{
@@ -82,11 +11,27 @@ p{
     height: 50px;
 }
 
-.centerHomeButton{
+.movie-preview{
+    text-align: center;
+}
+.movie-preview-info{
     margin: auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    width: auto;
+    max-width: 500px;
+    padding: 15px;
 }
 
-/*AddMoviePage.js styling*/
+
+/*AddMovie Styling*/
+.addMovie{
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 100px;
+    height: 45px;
+}
 .addMovieForm{
     border: solid black 2px; 
     width: 500px;
@@ -94,7 +39,6 @@ p{
     text-align: center;
     margin: auto;
 }
-
 label{
     width: 100%;
     display: inline-block;
