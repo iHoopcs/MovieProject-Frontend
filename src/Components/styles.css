@@ -34,10 +34,11 @@
 }
 .addMovieForm{
     border: solid black 2px; 
-    width: 500px;
-    height: 700px;
+    width: 400px;
+    height: fit-content;
     text-align: center;
     margin: auto;
+    padding: 15px;
 }
 label{
     width: 100%;

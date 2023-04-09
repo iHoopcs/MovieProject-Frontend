@@ -2,9 +2,8 @@
 export default function AddMoviePage(){
     return (
         <>
-            <h1>Add Movie</h1>
-            <div className="addMovieForm">
-                <h3>Fill out form to add movie.</h3>
+            <h1 className="text-center mt-3">Add Movie</h1>
+            <div className="addMovieForm mb-3">
                 <form action="http://localhost:8080/api/addMovie" method="post">
                     <label for="name">Name:</label>
                     <input type={'text'} name="name"></input>
