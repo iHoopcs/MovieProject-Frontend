@@ -12,7 +12,7 @@ export default function NavbarComponent() {
                         <Nav.Link href="/comedy">Comedy</Nav.Link>
                         <Nav.Link href="/horror">Horror</Nav.Link>
                         <Nav.Link href="/romance">Romance</Nav.Link>
-                        <Nav.Link href="/scifi">Sci-Fi</Nav.Link>
+                        <Nav.Link href="/mystery/sci-fi">Mystery/Sci-Fi</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link href="/addMovie">Add Movie</Nav.Link>
