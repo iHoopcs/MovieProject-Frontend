@@ -1,7 +1,8 @@
-.card{
-    width: 15rem;
-    height: auto; 
-    max-height: 500px;
+.card-img-top{
+    width: 100%;
+    height: 25vw;
+    object-fit: fill;
+    
 }
 
 .styleHomeButton{
