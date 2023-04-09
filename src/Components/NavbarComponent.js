@@ -16,7 +16,7 @@ export default function NavbarComponent() {
                     </Nav>
                     <Nav>
                         <form className="d-flex" role="search" action="http://localhost:8080/searchMovie" method="get">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="type"/>
                             <button class="btn btn-outline-success me-2" type="submit">Search</button>
                         </form>
                         <Nav.Link href="/addMovie">Add Movie</Nav.Link>
