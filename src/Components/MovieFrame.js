@@ -6,7 +6,7 @@ export default function MovieFrame(props){
     return (
         <>
             <div className='col-3'>                
-                    <div className="card shadow-lg border-light mb-5">   
+                    <div className="card shadow-lg border-0 mb-5">
                     <a href= {`/movies/${movie.id}/${movie.name}`}>
                         <img src={movie.imgUrl} alt={movie.name} className='card-img-top'/>
                         </a>  

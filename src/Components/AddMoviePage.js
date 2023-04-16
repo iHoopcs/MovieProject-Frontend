@@ -4,7 +4,7 @@ export default function AddMoviePage(){
         <>
             <h1 className="text-center mt-3">Add Movie</h1>
             <div className="addMovieForm mb-3">
-                <form action="http://localhost:8080/api/addMovie" method="post">
+                <form action="http://localhost:8080/addMovie" method="post">
                     <label for="name">Name:</label>
                     <input type={'text'} name="name"></input>
                     <br></br>
@@ -40,6 +40,19 @@ export default function AddMoviePage(){
                     <label for="movieDescription">Description:</label>
                     <input type={'text'} name="movieDescription"></input>
                     <br></br>
+
+                    <label for="year">Year:</label>
+                    <input type={'text'} name="year"></input>
+                    <br></br>
+
+                    <label for="hr">Hr:</label>
+                    <input type={'text'} name="hr"></input>
+                    <br></br>
+
+                    <label for="Min">Min:</label>
+                    <input type={'text'} name="min"></input>
+                    <br></br>
+
 
                     <input type={'submit'}></input>
                 </form>   

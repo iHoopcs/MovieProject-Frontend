@@ -10,6 +10,8 @@ export default function NavbarComponent() {
                         <Nav.Link href="/action">Action</Nav.Link>
                         <Nav.Link href="/anime">Anime</Nav.Link>
                         <Nav.Link href="/comedy">Comedy</Nav.Link>
+                        <Nav.Link href="/comingOfAge">Coming of Age</Nav.Link>
+                        <Nav.Link href="/drama">Drama</Nav.Link>
                         <Nav.Link href="/horror">Horror</Nav.Link>
                         <Nav.Link href="/romance">Romance</Nav.Link>
                         <Nav.Link href="/mystery/sci-fi">Mystery/Sci-Fi</Nav.Link>

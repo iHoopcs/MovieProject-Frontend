@@ -59,7 +59,33 @@ function App(){
     }
     useEffect(() => {
         fetchComedyMovies();
-    }, []); 
+    }, []);
+
+    //fetch coming of age movies from api
+    const [comingOfAges, setComingOfAges] = useState([]);
+    const fetchComingOfAgeMovies = async() => {
+        await axios.get('http://localhost:8080/api/movies/comingOfAge')
+            .then(res => {
+                console.log(res.data);
+                setComingOfAges(res.data)
+            })
+    }
+    useEffect(() => {
+        fetchComingOfAgeMovies();
+    }, []);
+
+    //fetch drama movies from api
+    const [dramas, setDramas] = useState([]);
+    const fetchDramas = async() => {
+        await axios.get('http://localhost:8080/api/movies/drama')
+            .then(res => {
+                console.log(res.data);
+                setDramas(res.data)
+            })
+    }
+    useEffect(() => {
+        fetchDramas();
+    }, []);
 
     //fetch horror movies from api
     const [horrors, setHorrors] = useState([]); 
@@ -106,9 +132,11 @@ function App(){
             <Routes>
                 <Route path='/' element={<Home movies={movies}/>}/>
                 <Route path='/addmovie' element={<AddMoviePage />}/>
-                <Route path='/anime' element={<GenreMoviePage movies={animes}/>}/>
+                <Route path='anime' element={<GenreMoviePage movies={animes}/>}/>
                 <Route path='action' element={<GenreMoviePage movies={actions}/>}/>
                 <Route path='comedy' element={<GenreMoviePage movies={comedies}/>}/>
+                <Route path='comingOfAge' element={<GenreMoviePage movies={comingOfAges}/>}/>
+                <Route path='drama' element={<GenreMoviePage movies={dramas}/>}/>
                 <Route path='horror' element={<GenreMoviePage movies={horrors}/>}/>
                 <Route path='romance' element={<GenreMoviePage movies={romances}/>}/>
                 <Route path='mystery/sci-fi' element={<GenreMoviePage movies={mysterySciFi}/>}/>
