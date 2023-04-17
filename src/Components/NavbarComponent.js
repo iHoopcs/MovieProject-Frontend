@@ -7,14 +7,29 @@ export default function NavbarComponent() {
                 <Container>
                     <Navbar.Brand href="/">ReactMovies</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="/action">Action</Nav.Link>
-                        <Nav.Link href="/anime">Anime</Nav.Link>
-                        <Nav.Link href="/comedy">Comedy</Nav.Link>
-                        <Nav.Link href="/comingOfAge">Coming of Age</Nav.Link>
-                        <Nav.Link href="/drama">Drama</Nav.Link>
-                        <Nav.Link href="/horror">Horror</Nav.Link>
-                        <Nav.Link href="/romance">Romance</Nav.Link>
-                        <Nav.Link href="/mystery/sci-fi">Mystery/Sci-Fi</Nav.Link>
+                        <div className="dropdown">
+                            <button type="button" className="btn btn-sm btn-danger dropdown-toggle" data-bs-toggle="dropdown">
+                                Genres
+                            </button>
+                            <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/action">Action</a></li>
+                                <li><a className="dropdown-item" href="/anime">Anime</a></li>
+                                <li><a className="dropdown-item" href="/comedy">Comedy</a></li>
+                                <li><a className="dropdown-item" href="/comingOfAge">Coming of Age</a></li>
+                                <li><a className="dropdown-item" href="/drama">Drama</a></li>
+                                <li><a className="dropdown-item" href="/horror">Horror</a></li>
+                                <li><a className="dropdown-item" href="/mystery/sci-fi">Mystery/Sci-Fi</a></li>
+                                <li><a className="dropdown-item" href="/romance">Romance</a></li>
+                            </ul>
+                        </div>
+
+
+
+
+
+
+
+
                     </Nav>
                     <Nav>
                         <form className="d-flex" role="search" action="http://localhost:8080/searchMovie" method="get">
